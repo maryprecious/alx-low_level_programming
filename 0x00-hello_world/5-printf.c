@@ -1,8 +1,11 @@
 #include <studio.h>
 
 /**
- * main " this is the main function
- * return: 0 when successfuil
+ * main - This is the main entry point of the program
+ *
+ * This function prints a message to the console and return 0
+ *
+ * Return: Always 0
  */
 
 int main(void)
