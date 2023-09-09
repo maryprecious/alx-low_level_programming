@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point for printing alphabet in lower case.
+ * main - Entry point for printing combination of two numbers.
  *
  * Return: Always 0 when (success)
  */
@@ -12,20 +12,27 @@ int main(void)
 
 	while(i <= '9')
 	{
-		putchar(i);
-		putchar(j);
-		if (i == '8' && j == '9')
+		while(j <= '9')
 		{
-			putchar('\n');
+			if (!(i > j) || i == j)
+			{
+				putchar(i);
+				putchar(j);
+				if (i == '8' && j == '9')
+				{
+					putchar('\n');
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			j++;
 		}
-		else
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		j = '0';
+		i++;
 	}
-	j - '0';
-	i++;
-}
 return (0);
+
 }
