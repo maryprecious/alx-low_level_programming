@@ -3,7 +3,7 @@
 /**
  * main - prints all possible different combinations of three digits
  *
- * Return : 0 when (success)
+ * Return value : 0 success
  */
 
 int main(void)
