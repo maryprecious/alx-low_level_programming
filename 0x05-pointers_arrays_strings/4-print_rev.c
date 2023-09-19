@@ -6,12 +6,19 @@
 
 void print_rev(char *s)
 {
-int nma = 0, mpa = 0;
-nma = _strlen(s);
+int nma = 0;
+int o;
 
-for (mpa = nma - 1; mpa >= 0; mpa--)
-
-	_putchar(s[mpa]);
-
+while (*s != '\0)
+{
+	nma++;
+	s++;
+}
+s--;
+for(o = nma; o > 0; o--)
+{
+	_putchar(*s);
+	s--;
+	}
 _putchar('\n');
 }
