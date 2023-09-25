@@ -1,1 +1,1 @@
-read me for 0x05-pointers_arrays_strings
+readme for 0x07. C - Even more pointers, arrays and strings
