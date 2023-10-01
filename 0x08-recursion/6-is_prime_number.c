@@ -15,14 +15,14 @@ else if (a == r)
 {
 return (1);
 }
-return (primenumber_(a, r + 1));
+return (primenumber_a(a, r + 1));
 }
 /**
  * is_prime_number - tell if an integer is a prime or not
  * @n: number to check
  * Return: 0 or 1
  */
-int is_prime_number(int n);
+int is_prime_number(int n)
 {
 	return (primenumber_a(n, 2));
 }
