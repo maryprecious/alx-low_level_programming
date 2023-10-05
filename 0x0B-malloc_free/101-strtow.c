@@ -24,7 +24,7 @@ void ch_free_grid(char **grid, size_t height)
 char **strtow(char *str)
 {
 	char **aout;
-	size_t c, height, a, p, a1;
+	size_t c, height, a, b, a1;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
@@ -53,7 +53,14 @@ char **strtow(char *str)
 				ch_free_grid(aout, a);
 				return (NULL);
 				}
+				break;
 			}
+
 		}
+		for (b = 0; a1 <= c; a1++, b++)
+			aout[a][b] = str[a1];
+		aout[a][b] = '\0';
 	}
+	aout[a] = NULL;
+	return (aout);
 }
