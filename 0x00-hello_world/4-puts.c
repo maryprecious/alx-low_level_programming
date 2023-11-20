@@ -1,13 +1,14 @@
-#include <studio.h>
+#include <stdio.h>
 
 /**
- * main * this is the main function
+ * main - prints the given word
  *
- * return: always 0
+ * return: always 0 on (success)
  */
 
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-		return (0);
+
+	return (0);
 }
