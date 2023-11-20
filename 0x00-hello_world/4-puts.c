@@ -3,7 +3,7 @@
 /**
  * main - prints the given word
  *
- * return: always 0 on (success)
+ * Return: always 0 on (success)
  */
 
 int main(void)
